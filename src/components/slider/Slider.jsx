@@ -24,8 +24,8 @@ const Slider = () => {
            slidesPerGroup={1}
            loop={true} 
            >
-                {SliderProducts.map((slide,i)=>
-            <SwiperSlide >
+                {SliderProducts.map(slide=>
+            <SwiperSlide key={slide.img} >
                 <div className="left-s">
                     <div className="name">
                         <span>
