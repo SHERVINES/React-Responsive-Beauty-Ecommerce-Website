@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Products from "./components/products/Products";
+import Reviews from "./components/reviews/Reviews";
 import Slider from "./components/slider/Slider";
 import Virtual from "./components/virtual/Virtual";
 
@@ -13,6 +14,7 @@ function App() {
       <Slider/> 
       <Virtual/>
       <Products />
+      <Reviews />
     </div>
   );
 }
