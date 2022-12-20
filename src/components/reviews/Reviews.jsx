@@ -26,6 +26,17 @@ const Reviews = () => {
                 slidesPerGroup={1}
                 spaceBetween={20}
                 className={css.tcarousel}
+                breakpoints={{
+                    856:{
+                        slidesPerView:3
+                    },
+                    640:{
+                        slidesPerView:2
+                    },
+                    0:{
+                        slidesPerView:1
+                    }
+                }}
                 >
                     {
                         TestimonialsData.map(testimonial=> (

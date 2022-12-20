@@ -23,7 +23,7 @@
   bottom: 0;
   background: linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.31%);
 }
-.cart2{
+.cart2 {
   position: absolute;
   bottom: 25%;
   right: -5%;
@@ -31,7 +31,7 @@
   gap: 1rem;
   align-items: center;
 }
-.cart2>svg{
+.cart2 > svg {
   width: 30px;
   height: 30px;
   padding: 10px;
@@ -40,7 +40,7 @@
   border: 6px solid var(--black);
   cursor: pointer;
 }
-.signup{
+.signup {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -50,12 +50,11 @@
   border-radius: 15px;
   box-shadow: var(--shadow1);
 }
-.signup>:first-child{
+.signup > :first-child {
   display: block;
   width: 6rem;
-  
 }
-.signup>:nth-child(2){
+.signup > :nth-child(2) {
   border-radius: 50%;
   border: 1px solid skyblue;
   display: flex;
@@ -66,7 +65,6 @@
   justify-content: center;
   cursor: pointer;
 }
-
 
 .h_sides {
   display: grid;
@@ -108,4 +106,62 @@
 .customers :first-child {
   font-weight: 700;
   font-size: 2.5rem;
+}
+@media (max-width: 856px) {
+  .text1,
+  .text2 > span:nth-of-type(2) {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  .text2 > span:nth-of-type(1),
+  .traffic > span:nth-child(1),
+  .customers > span:nth-child(1) {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .blueCircle {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+  }
+  .wrapper > img {
+    width: 70%;
+    height: 100%;
+  }
+  .container {
+    grid-template-areas:
+      "left center center"
+      "right right rught";
+  }
+  .container > :first-child {
+    grid-area: left;
+    grid-template-rows: none;
+    gap: 8rem;
+  }
+  .container > :nth-child(2) {
+    grid-area: center;
+  }
+  .container > :nth-child(3) {
+    grid-area: right;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0rem;
+  }
+}
+@media (max-width: 640px) {
+  .blueCircle {
+    top: 0;
+    width: 16rem;
+    height: 72%;
+  }
+  .wrapper > img {
+    top: 3rem;
+    width: 12rem;
+    height: 15rem;
+  }
+  .cart2 {
+    transform: scale(0.7);
+    right: -2rem;
+    bottom: -1rem;
+  }
 }
